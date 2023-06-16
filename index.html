@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/argo-sm.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Argonium</title>
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body>
+    <nav
+      style="
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        background-color: #1e1e1e;
+      "
+      class="drag"
+    >
+      <div></div>
+      <div>
+        <span
+          style="
+            cursor: pointer;
+            font-size: 25px;
+            padding-left: 5px;
+            text-align: center;
+            padding-right: 5px;
+          "
+          id="minimize"
+          class="no-drag nav-link"
+        >
+          &minus;
+        </span>
+        <span
+          style="
+            cursor: pointer;
+            font-size: 25px;
+            padding-left: 5px;
+            text-align: center;
+            padding-right: 5px;
+          "
+          id="maximize"
+          class="no-drag nav-link"
+        >
+          &#9634;
+        </span>
+        <span
+          style="
+            cursor: pointer;
+            font-size: 25px;
+            padding-left: 5px;
+            text-align: center;
+            padding-right: 10px;
+          "
+          id="close-app"
+          class="no-drag nav-link"
+        >
+          &#10799;
+        </span>
+      </div>
+    </nav>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script src="/src/window.js" type="module" defer></script>
+  </body>
+</html>

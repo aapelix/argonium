@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #18181a;
+  color: white;
+}
+
+.scale {
+  transition: transform 0.2s ease-in-out;
+}
+
+.scale:hover {
+  transform: scale(1.1);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #18181a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10000px;
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+.drag {
+  -webkit-app-region: drag;
+}
+
+.no-drag {
+  -webkit-app-region: no-drag;
+}
+
+.nav-link:hover {
+  background-color: #18181a;
+}
+
+nav,
+.nav {
+  -webkit-user-select: none;
+}
